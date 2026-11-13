@@ -1,0 +1,42 @@
+name: SaaS Hub quality
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+      - name: Run source and SEO checks
+        run: npm test
+      - name: Build Astro site
+        run: npm run build
+      - name: Assert seven cards and static SEO output
+        run: |
+          node --input-type=module <<'NODE'
+          import { readFileSync, existsSync } from 'node:fs';
+          import assert from 'node:assert/strict';
+          const html = readFileSync('dist/index.html', 'utf8');
+          const apps = JSON.parse(readFileSync('src/data/products.json', 'utf8'));
+          assert.equal(apps.length, 7);
+          for (const app of apps) {
+            assert.ok(html.includes(app.name), app.name);
+            assert.ok(html.includes(app.home), app.home);
+          }
+          for (const name of ['robots.txt', 'sitemap.xml', 'llms.txt', 'llms-full.txt','og.svg']) {
+            assert.ok(existsSync('dist/' + name), name);
+          }
+          assert.ok(html.includes('https://saas.planet-x.co/'));
+          assert.ok(html.includes('application/ld+json'));
+          console.log('Seven-app render + SEO smoke test PASS');
+          NODE
