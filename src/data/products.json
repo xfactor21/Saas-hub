@@ -1,0 +1,149 @@
+[
+  {
+    "id": "client-console",
+    "name": "Client Console",
+    "initials": "CC",
+    "category": "Client delivery",
+    "tag": "PROJECTS + APPROVALS",
+    "purpose": "Keep client projects organized from proposal to approval and milestone.",
+    "audience": "Client teams managing projects and approvals",
+    "features": [
+      "Proposals and project approvals",
+      "Change requests and updates",
+      "Milestone and progress tracking"
+    ],
+    "home": "https://console.planet-x.co",
+    "app": "https://console.planet-x.co/app",
+    "pricing": "https://console.planet-x.co/pricing",
+    "monthly": 19,
+    "annual": 190,
+    "free": "",
+    "trial": ""
+  },
+  {
+    "id": "dispatchloop",
+    "name": "DispatchLoop",
+    "initials": "DL",
+    "category": "Field operations",
+    "tag": "FIELD OPERATIONS",
+    "purpose": "Coordinate field jobs, technician schedules and job progress.",
+    "audience": "Dispatchers and field-service teams",
+    "features": [
+      "Technician scheduling",
+      "Field job checklists",
+      "Parts and job tracking"
+    ],
+    "home": "https://dispatchloop.planet-x.co",
+    "app": "https://dispatchloop.planet-x.co/app",
+    "pricing": "https://dispatchloop.planet-x.co/pricing",
+    "monthly": 39,
+    "annual": 390,
+    "free": "",
+    "trial": ""
+  },
+  {
+    "id": "ledgerloop",
+    "name": "Ledgerloop",
+    "initials": "LL",
+    "category": "Finance",
+    "tag": "INVOICE FOLLOW-UP",
+    "purpose": "Track outstanding invoices and organize payment follow-up without a full accounting suite.",
+    "audience": "Teams following up on invoices",
+    "features": [
+      "Invoice and customer records",
+      "Payment reminder workflows",
+      "Externally recorded payments"
+    ],
+    "home": "https://ledgerloop.planet-x.co",
+    "app": "https://ledgerloop.planet-x.co/app",
+    "pricing": "https://ledgerloop.planet-x.co/pricing",
+    "monthly": 19,
+    "annual": 190,
+    "free": "",
+    "trial": ""
+  },
+  {
+    "id": "formforge",
+    "name": "FormForge",
+    "initials": "FF",
+    "category": "Forms",
+    "tag": "SMART FORMS",
+    "purpose": "Build conditional forms, collect responses and route information using rules.",
+    "audience": "Intake and structured information capture",
+    "features": [
+      "Conditional questions",
+      "Response collection",
+      "Rule-based routing"
+    ],
+    "home": "https://formforge.planet-x.co",
+    "app": "https://formforge.planet-x.co/#/app",
+    "pricing": "https://formforge.planet-x.co/pricing",
+    "monthly": 19,
+    "annual": 190,
+    "free": "Free: 3 forms, 100 accepted responses/month",
+    "trial": "14-day Pro trial; payment method required"
+  },
+  {
+    "id": "cratekeys",
+    "name": "CrateKeys",
+    "initials": "CK",
+    "category": "Software licensing",
+    "tag": "SOFTWARE LICENSING",
+    "purpose": "Issue and manage software licenses, activation seats and revocations.",
+    "audience": "Software developers and distributors",
+    "features": [
+      "License and product management",
+      "Activation seats and expiry",
+      "Developer integration"
+    ],
+    "home": "https://cratekeys.planet-x.co",
+    "app": "https://cratekeys.planet-x.co/#/app",
+    "pricing": "https://cratekeys.planet-x.co/pricing",
+    "monthly": 24,
+    "annual": 240,
+    "free": "Free: 1 product, 50 licenses",
+    "trial": "14-day Studio trial; payment method required"
+  },
+  {
+    "id": "relaydesk",
+    "name": "RelayDesk",
+    "initials": "RD",
+    "category": "Customer support",
+    "tag": "SUPPORT DESK",
+    "purpose": "Manage customer tickets in a shared queue with SLA clocks, private notes and a customer portal.",
+    "audience": "Support teams responding to customer requests",
+    "features": [
+      "Ticket queue, assignment and priorities",
+      "Response and resolution SLA targets",
+      "Customer portal and internal notes"
+    ],
+    "home": "https://planetx-relaydesk.vercel.app",
+    "app": "https://planetx-relaydesk.vercel.app/#/app",
+    "pricing": "https://planetx-relaydesk.vercel.app/pricing",
+    "monthly": 29,
+    "annual": 290,
+    "free": "Free: 2 agents, 100 tickets/month",
+    "trial": "14-day Team trial"
+  },
+  {
+    "id": "statuspost",
+    "name": "StatusPost",
+    "initials": "SP",
+    "category": "Uptime + incidents",
+    "tag": "SERVICE STATUS",
+    "purpose": "Monitor endpoints and publish trustworthy service status, incident updates and planned maintenance.",
+    "audience": "Product and operations teams",
+    "features": [
+      "Recorded endpoint checks and uptime",
+      "Public incident updates and subscribers",
+      "Scheduled maintenance windows"
+    ],
+    "home": "https://planetx-statuspost.vercel.app",
+    "app": "https://planetx-statuspost.vercel.app/#/app",
+    "pricing": "https://planetx-statuspost.vercel.app/pricing",
+    "monthly": 29,
+    "annual": 290,
+    "free": "Hobby: 3 monitors, 25 subscribers",
+    "trial": "14-day Team trial"
+  }
+]

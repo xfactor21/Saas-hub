@@ -1,13 +1,11 @@
 # planet.X SaaS Hub
 
-The standalone SaaS directory at **https://saas.planet-x.co/**.
+Dedicated source for the public SaaS directory at https://saas.planet-x.co. This repository is **not** the company website (`xfactor21/Planetx`).
 
-This repository is dedicated to the SaaS Hub. It is **not** the planet.X company website repository (`xfactor21/Planetx`). Do not share deployment configuration or source trees between them.
+Seven products: Client Console, DispatchLoop, Ledgerloop, FormForge, CrateKeys, RelayDesk, StatusPost. Source of truth: `src/data/products.json` (business descriptions/prices checked against public deployments on 2026-11-13).
 
-## Source status
+`npm install`, `npm test`, `npm run build` — Astro static export in `dist/`; no API endpoints or secrets used here. Vercel project: `planetx-saas-hub`, domain `saas.planet-x.co`.
 
-The full audited Astro source package is `PlanetXSaaS-11.12-v2-seo-geo.zip` (provided as a downloadable conversation artifact). The source package has not yet been imported to this repository; **this README is not deployable**. The existing production site remains served by the independent Vercel project `planetx-saas-hub`.
+RelayDesk and StatusPost currently use their verified `vercel.app` domains. Their branded subdomains are not configured yet. Do not invent branded URLs or change product app source/billing from this repository.
 
-After importing the complete archive's root contents, run `npm install && npm test && npm run build`. Configure Vercel framework **Astro**, output directory `dist`, production branch `main`, and compare the generated site against https://saas.planet-x.co/ before enabling Git-connected production deployments.
-
-The SaaS services retain independent auth, billing and repositories: Client Console, DispatchLoop, Ledgerloop, FormForge and CrateKeys. Do not migrate their source or secrets into this directory.
+SEO: canonical HTML, Organization/CollectionPage/ItemList/SoftwareApplication/FAQ JSON-LD, public sitemap, robots, LLMS text and social media metadata. All product auth and payment links lead to the individual app.

@@ -1,0 +1,2 @@
+import products from '../data/products.json';
+export function GET(){return new Response('# planet.X Apps / Product Guide\nPublic hub: https://saas.planet-x.co/\n\n'+products.map(p=>'## '+p.name+'\nCategory: '+p.category+'\nAudience: '+p.audience+'\nCapabilities: '+p.features.join('; ')+'\nHome: '+p.home+'\nOpen: '+p.app+'\nPricing: '+p.pricing+'\n'+(p.free?p.free+'\n':'')+'Paid plans: $'+p.monthly+'/month or $'+p.annual+'/year.').join('\n\n')+'\n\nPricing and trial terms must be confirmed with each product.\n',{headers:{'Content-Type':'text/plain; charset=utf-8'}})}
